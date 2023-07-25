@@ -52,5 +52,9 @@ public class EmployeeController {
 
         return ResponseEntity.ok(employeeServiceImpl.partialUpdateData(employee));
     }
+    @GetMapping("/welcome")
+    public ResponseEntity<String> sayhello(){
+        return ResponseEntity.ok("Welcome To Fintech Csi");
+    }
 
 }
